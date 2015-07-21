@@ -1,0 +1,99 @@
+# FoundationZurbTips - 03
+
+> Simple responsive navigation with login modal.
+
+#### Using .SSCS
+```sh
+$background-color: #292c2f;
+$primary-color: #87D37C;
+
+.row {
+  max-width: 100%;
+}
+
+.menu {
+  background-color: $background-color;
+  padding: 1.5rem 3rem;
+  height: auto;
+  
+  .inline-list {
+    text-align: center;
+    
+    li {
+      float: none;
+      display: inline-block;
+    }
+    
+    a {
+      color: #fff;
+      padding-bottom: 0.5rem;
+      
+      &:hover {
+        color: $primary-color;
+        transition: all .3s ease-in-out;
+      }
+    }
+    
+    .active a {
+      color: $primary-color;
+    }
+  }
+  
+  .account {
+    position: absolute;
+    top: 3%;
+    right: 3%;
+    
+    a , i {
+      color: #fff;
+    }
+  }
+  
+  @media only screen and (min-width: 40.063em) {
+  height: 5rem;
+  
+  .inline-list { 
+    float: left;
+    margin: 0 0 0 1.5rem;
+    }
+    
+    a:hover {
+      border-bottom: 2px solid $primary-color;
+    }
+  }
+  
+  .account-action {
+    float: right;
+    margin: -.75rem 0 0 0;
+    
+    li {
+      margin-left: .2rem;
+    }
+    
+    a { padding: 0.75rem 1rem;}
+    
+    a.signup {
+      font-weight: bold;
+      background-color: scale-color($background-color, $lightness: 10%);
+      border-radius: 3px;
+    }
+  }
+}
+
+.name {
+  text-align: center;
+  font-size:  1.5rem;
+  line-height: 1;
+  margin: 0 0 1rem 0;
+  color: #fff;
+  
+  i {
+    color: $primary-color;
+    margin-right: 0.5rem;
+  }
+  
+  @media only screen and (min-width: 40.063em) {
+    float: left;
+  }
+}
+```

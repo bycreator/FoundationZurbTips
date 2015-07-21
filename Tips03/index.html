@@ -1,0 +1,77 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FoundationZurb ByCreator</title>
+    <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="css/custom.css" />
+    <script src="js/vendor/modernizr.js"></script>
+  </head>
+  <body>
+ 
+  <link href="http://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css" rel="stylesheet">
+
+    <nav class="menu">
+      <h1 class="name">ByCreator</a></h1>
+      <ul class="inline-list">
+        <li><a href="#">Home</a></li>
+        <li class="active"><a href="#">Blog</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <ul class="inline-list hide-for-small-only account-action">
+        <li><a href="#" data-reveal-id="myModal">Login</a></li>
+        <li class=""><a class="signup" href="#" data-reveal-id="myModal">Signup</a></li>
+      </ul>
+      <a class="account hide-for-medium-up" href="#" data-reveal-id="myModal"><i class="fi-unlock"></i></a>
+    </nav>
+
+    <!-- modal content -->
+
+    <div id="myModal" class="reveal-modal" data-reveal aria-labelledby="login or sign up" aria-hidden="true" role="dialog">
+      <div class="row">
+        <div class="large-6 columns auth-plain">
+          <div class="signup-panel left-solid">
+            <p class="welcome">Registered Users</p>
+            <form>
+              <div class="row collapse">
+                <div class="small-2  columns">
+                  <span class="prefix"><i class="fi-torso-female"></i></span>
+                </div>
+                <div class="small-10  columns">
+                  <input type="text" placeholder="username">
+                </div>
+              </div>
+              <div class="row collapse">
+                <div class="small-2 columns ">
+                  <span class="prefix"><i class="fi-lock"></i></span>
+                </div>
+                <div class="small-10 columns ">
+                  <input type="text" placeholder="password">
+                </div>
+              </div>
+            </form>
+            <a href="#" class="button ">Log In </a>
+          </div>
+        </div>
+
+        <div class="large-6 columns auth-plain">
+          <div class="signup-panel newusers">
+            <p class="welcome"> New User?</p>
+            <p>By creating an account with us, you will be able to move through the checkout process faster, view and track your orders, and more.</p><br>
+            <a href="#" class="button ">Sign Up</a></br>
+          </div>
+        </div>
+
+       </div>
+      <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+    </div>
+
+    
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+  </body>
+</html>
