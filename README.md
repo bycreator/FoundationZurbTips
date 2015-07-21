@@ -1,5 +1,5 @@
 # FoundationZurbTips
-Tips on Foundation ZUBR 
+Tips on Foundation ZURB 
 
 > 01 - A feature block that would be great for services, user profile, or even company profiles
 
