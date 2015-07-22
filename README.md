@@ -6,3 +6,5 @@ Tips on Foundation ZURB
 > 02 - Alerts with opaque backgrounds and icon fonts.
 
 > 03 - Simple responsive navigation with login modal.
+
+> 04 - Accordions animate.

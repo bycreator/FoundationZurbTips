@@ -1,0 +1,64 @@
+body {
+  background-color: #03a9f4;
+  padding: 2rem;
+}
+
+.accordion {
+  margin-left: 0;
+  margin-bottom: 2rem;
+  -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+.accordion .accordion-navigation {
+  -moz-transition: ease 0.4s all;
+  -o-transition: ease 0.4s all;
+  -webkit-transition: ease 0.4s all;
+  transition: ease 0.4s all;
+  /* 		@include box-shadow(0 0 1px rgba(black, 0.2)); */
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.accordion .accordion-navigation.active {
+  -moz-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.4);
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+.accordion .accordion-navigation.active > a {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  background: transparent;
+}
+.accordion .accordion-navigation > a {
+  -moz-transition: ease 0.4s all;
+  -o-transition: ease 0.4s all;
+  -webkit-transition: ease 0.4s all;
+  transition: ease 0.4s all;
+  background: transparent;
+}
+.accordion .accordion-navigation > a:hover {
+  background-color: rgba(255, 255, 255, 0.75);
+}
+.accordion .accordion-navigation > .content {
+  display: block;
+  max-height: 0;
+  overflow-y: auto;
+  padding: 0 1rem;
+  -moz-transition: ease 0.4s all;
+  -o-transition: ease 0.4s all;
+  -webkit-transition: ease 0.4s all;
+  transition: ease 0.4s all;
+}
+.accordion .accordion-navigation > .content.active {
+  max-height: 60vh;
+  padding: 1rem;
+  -moz-transition: ease 0.4s all;
+  -o-transition: ease 0.4s all;
+  -webkit-transition: ease 0.4s all;
+  transition: ease 0.4s all;
+  -moz-transition-delay: 0.4s;
+  -o-transition-delay: 0.4s;
+  -webkit-transition-delay: 0.4s;
+  transition-delay: 0.4s;
+  background: transparent;
+}

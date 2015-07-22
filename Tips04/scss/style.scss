@@ -1,0 +1,55 @@
+@import "compass/css3";
+
+body
+{
+  background-color: rgba(rebeccapurple, 0.6115);
+  padding: 2rem;
+}
+.accordion
+{
+	margin-left: 0;
+	margin-bottom: 2rem;
+	@include box-shadow(0 1px 3px rgba(black, 0.2));
+	.accordion-navigation
+	{
+		@include transition(ease 0.4s all);
+/* 		@include box-shadow(0 0 1px rgba(black, 0.2)); */
+		background-color: rgba(white, 0.5);
+		&.active
+		{
+			@include box-shadow(0 1px 10px rgba(black, 0.4));
+			position: relative; // so box-shadow appears over other accordions
+			background-color: rgba(white, 0.9);
+			> a
+			{
+				border-bottom: 1px solid rgba(0,0,0,0.05);
+				background: transparent;
+			}
+		}
+		> a
+		{
+			@include transition(ease 0.4s all);
+			background: transparent;
+			&:hover
+      {
+        background-color: rgba(white, 0.75);
+      }
+		}
+		> .content
+		{
+			display: block;
+			max-height: 0;
+			overflow-y: auto;
+			padding: 0 1rem;
+			@include transition(ease 0.4s all);
+			&.active
+			{
+				max-height: 60vh;
+				padding: 1rem;
+				@include transition(ease 0.4s all);
+				@include transition-delay(0.4s);
+				background: transparent;
+			}
+		}
+	}
+}
