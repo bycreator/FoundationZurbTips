@@ -8,3 +8,5 @@ Tips on Foundation ZURB
 > 03 - Simple responsive navigation with login modal.
 
 > 04 - Accordions animate.
+
+> 05 - Animate Modal.
