@@ -10,3 +10,7 @@ Tips on Foundation ZURB
 > 04 - Accordions animate.
 
 > 05 - Animate Modal.
+
+> 06 - Tabs and Slick Slider linked up.
+
+> 07 - Build a highchart one point at a time.

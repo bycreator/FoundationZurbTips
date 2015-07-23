@@ -1,0 +1,55 @@
+class MyChartController
+  addPoint: ->
+    if $('form').parsley().validate()
+      chart = $('#container').highcharts()
+      xVal = parseFloat($('#x-input').val())
+      yVal = parseFloat($('#y-input').val())
+      data = [xVal, yVal] if not isNaN(xVal) and not isNaN(yVal)
+      if chart.series[0]?
+        chart.series[0].addPoint(data)
+      else
+        chart.addSeries({ name: 'Data', data: [data] })
+      $('#container').show()
+    $('form')[0].reset()
+
+  clearData: ->
+      chart = $('#container').highcharts()
+      chart.series[0].remove()
+  
+  renderGraph: ->
+      chart_config =
+          chart:
+              renderTo: 'container',
+              type: 'line'
+          title:
+              text: 'Add Data To Me'
+          legend:
+              layout: 'vertical',
+              align: 'right',
+              backgroundColor: '#FFFFFF',
+              verticalAlign: 'top',
+              borderWidth: 0
+          series: [
+              name: 'Data'
+              data: [
+                  [0, 1.5],
+                  [10, -5.0],
+                  [20, -5.65],
+                  [30, -4.65],
+                  [40, -2.21]
+              ]
+          ]
+      new Highcharts.Chart(chart_config)
+
+  myChart = new MyChartController
+  myChart.renderGraph()
+  $('input')
+     .attr('data-parsley-required', 'true')
+     .attr('data-parsley-trigger', 'change')
+     .attr('data-parsley-type', 'number')
+  $('form').parsley()
+  $('form').on 'click', '#add-button', () ->
+      myChart.addPoint()
+  $('form').on 'click', '#clear-button', () ->
+      myChart.clearData()
+      $('#container').hide()

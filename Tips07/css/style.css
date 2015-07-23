@@ -1,0 +1,13 @@
+.uhul {
+	padding: 2em;
+}
+#container {
+		border: 1px solid #999;
+    min-width: 200px;
+    min-height: 250px;
+    margin: 0 auto;
+}
+.parsley-errors-list {
+  color: red;
+  display: block;
+}

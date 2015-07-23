@@ -1,0 +1,101 @@
+html, body {
+  overflow: hidden; /* only set this to prevent scrollbar appearance, which upsets the tab list measurement */
+  width: 100%;
+  height: 100%;
+}
+.row:nth-of-type(1) .columns {
+  padding: 0 1.6em;
+}
+
+.tabs {
+	height: 64px;
+	position: relative; 
+	overflow: hidden; 
+	z-index: 0;
+  top: 15px;
+}
+.tabs li {
+	height: 64px; 
+	display: inline-block; 
+	position: absolute; 
+	z-index: 0; 
+	cursor: pointer;
+	-webkit-box-shadow: 0px 0 3px -1px orange inset;
+       -moz-box-shadow: 0px 0 3px -1px orange inset;
+            box-shadow: 0px 0 3px -1px orange inset;
+}
+.tab {
+	background-color: #585858;
+	border-bottom: 1px solid #FFFF99;
+	border-left: none;
+	border-right: none;
+}
+.title-wrap {
+	width: 100%; 
+	height: 100%;
+  position: relative;
+}
+.title {
+  padding-top: .55em;
+	text-align: center;
+}
+.title h5 {
+	color: white;
+	text-transform: uppercase; 
+	font-weight: bold; 
+	font-size: 0.85rem; 
+}
+.fa {
+	font-family: 'FontAwesome'; 
+	font-size: 1.3rem;
+}
+.tab-more {
+	z-index: 10; 
+	background-color: #FFFFCC; 
+	right: 0; 
+	border-bottom: 1px solid #FFFF99;
+} 
+.tab-back {
+	z-index: 10; 
+	background-color: #FFFFCC; 
+	left: -999px;
+	border-bottom: 1px solid #FFFF99;
+}
+.tab.active {
+	color: black;
+	background-color: #D8D8D8; 
+	cursor: auto; 
+	border-bottom: none;
+	border-right: 1px solid #FFFF99;
+	border-left: 1px solid #FFFF99;
+	-webkit-box-shadow: none;
+       -moz-box-shadow: none;
+            box-shadow: none;
+}
+.active h5 {
+	color: black;
+}
+
+/* slider styling */
+.slides {
+	position: relative; 
+	background-color: #D8D8D8;
+	border-left: 1px solid #FFFF99;
+	border-right: 1px solid #FFFF99;
+	border-bottom: 1px solid #FFFF99;
+}
+.slick-list {
+	margin: 0; 
+	padding: 0; 
+	overflow: hidden; 
+	display: block;
+}
+.slick-list:focus {
+	outline: none;
+}
+.slick-slide {
+	height: 100%; 
+	position: relative; 
+	float: left;
+	padding: .5em 2em;
+}
