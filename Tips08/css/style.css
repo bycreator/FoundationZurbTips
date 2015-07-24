@@ -1,0 +1,55 @@
+button, .button {
+border-style: solid;
+border-width: 0px;
+cursor: pointer;
+font-family: "roboto condensed","Helvetica",Helvetica,Arial,sans-serif;
+font-weight: normal;
+line-height: normal;
+margin: 0 0 1.25rem;
+position: relative;
+text-decoration: none;
+text-align: center;
+-webkit-appearance: none;
+-webkit-border-radius: 0;
+display: inline-block;
+padding-top: .825rem;
+padding-right: 2rem;
+padding-bottom: .825rem;
+padding-left: 2rem; 
+font-size: 1rem;
+background-color: #868686;
+box-shadow: 0px 3px 0px #616161;
+border-color: #2285A2;
+color: #FFF;
+transition: background-color 300ms ease-out;
+}
+
+button:hover, button:focus, .button:hover, .button:focus {
+background-color: #5F5F5F;
+}
+
+button.radius, .button.radius {
+border-radius: 5px;
+}
+
+nav .button {
+
+background: none;
+color: #9C9C9C;
+font-family: roboto condensed;
+line-height: 110px;
+padding-top: 0;
+padding-bottom: 0; 
+box-shadow: none;
+  border: none!important;
+} 
+ 
+nav .button:hover{
+  color: #4B4B4B;
+  background: none;
+}
+
+.logo img{
+  
+  max-width: 110px;
+}
