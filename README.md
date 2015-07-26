@@ -16,3 +16,5 @@ Tips on Foundation ZURB
 > 07 - Build a highchart one point at a time.
 
 > 08 - Fade Template.
+
+> 09 - FORM Animate.
